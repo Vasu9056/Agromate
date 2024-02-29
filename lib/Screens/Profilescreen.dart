@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class cvc extends StatelessWidget {
-  const cvc({super.key});
+class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('12112'),
+      body: Center(child: Text("profile")),
     );
   }
 }

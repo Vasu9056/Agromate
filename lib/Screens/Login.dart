@@ -1,5 +1,5 @@
 import 'package:agromate/Screens/ForgotPass.dart';
-import 'package:agromate/Screens/abc.dart';
+import 'package:agromate/Screens/bottom_navigation.dart';
 import 'package:agromate/Screens/signup.dart';
 import 'package:agromate/services/auth_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
   @override
@@ -125,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ForgotPass()));
+                                  builder: (context) => Navigation()));
                         } else {
                           controller.isLoading(false);
                         }
